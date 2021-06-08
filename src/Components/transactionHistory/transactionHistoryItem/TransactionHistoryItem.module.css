@@ -1,0 +1,13 @@
+.bodyTable {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  font-weight: 400;
+  /* border-collapse: collapse; */
+}
+.bodyTable:nth-child(odd) {
+  color: rgb(228, 203, 203);
+  background-color: rgb(7, 56, 48);
+  border: 1px solid black;
+  border-collapse: collapse;
+}

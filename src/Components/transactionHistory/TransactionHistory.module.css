@@ -1,0 +1,17 @@
+.transactionHistory {
+  width: 600px;
+  background-color: rgb(182, 175, 175);
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+.mainTable {
+  background: white;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(131, 129, 129, 0.9);
+  text-transform: uppercase;
+  /* border-collapse: collapse; */
+}

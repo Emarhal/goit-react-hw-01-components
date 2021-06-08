@@ -1,0 +1,31 @@
+.avatarTrue {
+  background-color: green;
+  /* width: 10px; */
+  height: 10px;
+  padding: 0px 4px 0px 6px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.avatarFalse {
+  background-color: red;
+  /* width: 10px; */
+  height: 10px;
+  padding: 0px 4px 0px 6px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.itemList {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.itemList:not(:last-child) {
+  margin-bottom: 15px;
+}
+.name {
+  text-align: center;
+  font-weight: 700;
+  color: rgba(28, 57, 184, 0.8);
+  text-transform: uppercase;
+}
