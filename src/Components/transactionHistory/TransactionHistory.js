@@ -1,20 +1,20 @@
 import React from "react";
 import TransactionHistoryItem from "./transactionHistoryItem/TransactionHistoryItem";
 import styles from "./TransactionHistory.module.css";
+import PropTypes from "prop-types";
 
-const TransactionHistory = ({ transactions }) => {
-  console.log(transactions);
+const TransactionHistory = ({ items }) => {
   return (
-    <table class={styles.transactionHistory}>
+    <table className={styles.transactionHistory}>
       <thead>
         <tr>
-          <th class={styles.mainTable}>Type</th>
-          <th class={styles.mainTable}>Amount</th>
-          <th class={styles.mainTable}>Currency</th>
+          <th className={styles.mainTable}>Type</th>
+          <th className={styles.mainTable}>Amount</th>
+          <th className={styles.mainTable}>Currency</th>
         </tr>
       </thead>
       <tbody>
-        {transactions.map((transaction) => (
+        {items.map((transaction) => (
           <TransactionHistoryItem
             transaction={transaction}
             key={transaction.id}
@@ -24,5 +24,7 @@ const TransactionHistory = ({ transactions }) => {
     </table>
   );
 };
-
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 export default TransactionHistory;

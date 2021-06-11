@@ -9,7 +9,6 @@ import styles from "./App.module.css";
 const { user } = data;
 
 const App = () => {
-  console.log(data);
   return (
     <div className={styles.container}>
       <Profile
@@ -19,9 +18,9 @@ const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics statisticalData={data.statisticalData} title="Upload stats" />
-      <FriendList friend={data.friends} />
-      <TransactionHistory transactions={data.transactions} />
+      <Statistics stats={data.statisticalData} title="Upload stats" />
+      <FriendList friends={data.friends} />
+      <TransactionHistory items={data.transactions} />
     </div>
   );
 };
